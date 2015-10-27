@@ -1,0 +1,130 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{textpos}
+\usepackage{pdfpages}
+\usepackage{fontspec}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{wallpaper}
+\captionsetup[table]{labelformat=empty}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\definecolor{title}{RGB}{94,18,0}
+\definecolor{sepcol}{RGB}{186,159,11}
+
+\usepackage[top=0.6in, left=0.6in, right=0.6in, bottom=1in]{geometry}%Change the top to 0.6 if you have no banner, or increase/decrease if your banner is of different height
+\ULCornerWallPaper{1}{pageBackground.jpg}%This is the background used, this shouldn't be changed.
+\newfontfamily\bookmania{Bookmania}
+\setmainfont{Bookmania}[Scale=0.9]
+
+\newcommand{\dndtitle}[2]{\noindent{\fontsize{#1}{#1}\textcolor{title}{\textsc{#2}}}\newline}
+
+\newcommand{\HRule}[2]{\par
+  \vspace*{\dimexpr-\parskip-\baselineskip+#2}
+  \begingroup
+  	\color{sepcol}
+  	\noindent\rule{\linewidth}{#1}\par
+  \endgroup  
+  \vspace*{\dimexpr-\parskip-.5\baselineskip+#2}}
+  
+\begin{document}
+\newgeometry{top=4.5in}
+\ThisULCornerWallPaper{1}{pageTopBannerHexblade.jpg}%This line is used to insert a nice top banner if you have one, the banner should have a full page background that matches the normal background. If you have no Banner remove this line.
+\begin{multicols}{2}
+\dndtitle{26pt}{Lycanthrope}
+Flavor text about lycanthropes here.\\
+\\
+\dndtitle{16pt}{People of the Moon}
+Some more Flavor Text\\
+\\
+\dndtitle{16pt}{Wise and Ferocius}
+Even more Flavor Text\\
+\\
+\dndtitle{18pt}{Prerequisites}
+In order to become and advance as a lycanthrope you must meet the following following prerequisites(in addition to the multiclassing prerequisites for your existing class):\\
+\\
+\begin{itemize}
+\item \textbf{Constitution 13.} Your body needs to be strong enough to handle the curse/disease.
+\item \textbf{Wisdom 13.} Being in contact with nature and your senses is required to understand your new powers.
+\item \textbf{Must be a humanoid.}Must be of the humanoid type otherwise the curse/disease cannot turn you correctly.
+\item \textbf{Character level 5th.} Only the experienced and powerful have what it takes to become true lycanthropes and not just some freak of nature.
+\item \textbf{The Moon.} Your character must have been bitten and survived the bite of a lycanthrope, and then have experienced the first change at a full moon.
+\end{itemize}
+\end{multicols}
+\newpage
+\restoregeometry
+\ThisCenterWallPaper{1}{pageBackgroundTablePrestige.jpg}
+\begin{textblock}{16}(1,0.2)
+\textsc{\textbf{The Lycanthrope}}
+\end{textblock}
+\begin{picture}(30,120)(-31,-50)
+\label{my-label}
+\begin{tabular}{cp{115.5mm}}
+                        &                          								\\
+\multirow{-2}{*}{Level} & \multirow{-2}{*}{Features}							\\
+\rowcolor[HTML]{B8EFAD} 
+1st                     & Creature of the Moon, Feral Instincts, Transformation	\\
+2nd                     & Inner beast											\\
+\rowcolor[HTML]{B8EFAD}
+3rd                     & Bestial Control										\\
+4th                     & Bestial Defence										\\
+\rowcolor[HTML]{B8EFAD} 
+5th                     & True Lycanthrope 
+\end{tabular}
+\end{picture}
+\begin{multicols}{2}
+\dndtitle{18pt}{Class Features}
+As a soulmelder you gain the following class features.\\
+\\
+\dndtitle{14pt}{Hit Point}
+\textbf{Hit Dice:} 1d10 per lycanthrope level\\
+\textbf{Hit Points at 1st level:} 10 + your Constitution modifier\\
+\textbf{Hit Points at higher level:} 1d10(or 6) + your Constitution modifier per <class name> level after 1st\\
+\\
+\dndtitle{14pt}{Proficiencies}
+\textbf{Saving Throws:} None\\
+\textbf{Skills:} Animal Handling, Survival\\
+\\
+\dndtitle{16pt}{Creature of the Moon}
+At 1st level your new bestial side gives you strength in combat, a better understanding of the world around you but some weaknesses aswell. You gain the following benefits
+\begin{itemize}
+\item \textbf{Transformation.} When damaged or hit by the light of a full moon, you transform into a beast determined by what lycanthrope bit you.
+\item \textbf{Bestial Senses.} Your Wisdom score improves to 16 if it isn't better already 
+\item \textbf{Contagious.} Your bite can transform the enemy into a lycanthrope of the same type as you unless they succeed on a Constitution save with DC equal to 8 + Proficiency bonus + your Constitution modifier
+\end{itemize}
+\dndtitle{16pt}{Feral Instincts}
+At 1st level you gain better instincts and senses than your peers\\
+\indent Your instincts are so honed that you have advantage on initiative rolls.
+\indent Additionally, if you are surprised at the beginning of combat and aren’t incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.\\
+\\
+\dndtitle{16pt}{Transformation}
+At 1st level you realize the power and danger a lycanthrope is, the uncontrollable transformation they often experience are both extremely powerful in combat but dangerous aswell.\\
+\indent Whenever you take damage in combat or is hit by the light from the full moon, the beast will force you to transform. You must make a Wisdom save DC 16 or transform to either hybrid or animal form of the type of lycanthrope you are.\\
+\\
+Look on page 206 to 211 in the monster manual for the stats of the Lycanthrope, these stats are used when you go through your transformation, with the following differences.\\
+\indent You have resistance instead of immunity to bludgeoning, slashing and piercing damage from non-magical and non-silvered weapons.\\
+\indent You use your original Mental scores but do use the better of yours and the lycanthropes physical scores. And your passive perception doesn't change.\\
+\\
+\dndtitle{16pt}{Inner beast}
+At 2nd level you unlock the beasts power to help you even when not transformed, gain the lycanthropes Keen senses trait in humanoid form as appropriate for	your type of lycanthropy.\\
+\indent additionally you reduce all damage from bludgeoning, slashing and piercing weapons that are not magic and not silvered by 3 in humanoid form\\
+\\
+\dndtitle{16pt}{Bestial Control}
+At 3rd level, you become more accustomed to the beast inside you and you learn to control it better.\\
+\indent When damaged or hit by the full moons light, you make the Wisdom save with proficiency, if you already have proficiency you gain advantage.\\
+\indent Additionally you can choose to use concentration to keep the beast in check.\\
+\\
+\dndtitle{16pt}{Bestial Defence}
+At 4th level you become almost as resilient as a true lycanthrope. In all forms you have resistance against bludgeoning, slashing and piercing damage from mundane non-silvered weapons.\\
+\indent Additionally you heal at a faster rate than normal creatures, whenever you expend a hitdice to heal you can reroll the dice and use the better result.\\
+\\
+\dndtitle{16pt}{True Lycanthrope}
+At 5th level you become fully in control of the beast inside, you choose when you are transformed, and can only be forced to transform by being damaged while hit by the light of a full moon. You do however make the Wisdom save at advantage.\\
+\indent You also learn to control the curse/disease as to not accidentally transform anyone you bit, and at the same time your claws an other natural weapons become able to transfer it. 
+\end{multicols}
+\end{document}

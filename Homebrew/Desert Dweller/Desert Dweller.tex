@@ -1,0 +1,159 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{textpos}
+\usepackage{pdfpages}
+\usepackage{fontspec}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{wallpaper}
+\captionsetup[table]{labelformat=empty}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\definecolor{title}{RGB}{94,18,0}
+\definecolor{sepcol}{RGB}{186,159,11}
+
+\usepackage[top=0.6in, left=0.6in, right=0.6in, bottom=1in]{geometry}%Change the top to 0.6 if you have no banner, or increase/decrease if your banner is of different height
+\ULCornerWallPaper{1}{pageBackground.jpg}%This is the background used, this shouldn't be changed.
+\newfontfamily\bookmania{Bookmania}
+\setmainfont{Bookmania}[Scale=0.9]
+
+\newcommand{\dndtitle}[2]{\noindent{\fontsize{#1}{#1}\textcolor{title}{\textsc{#2}}}\newline}
+
+\newcommand{\HRule}[2]{\par
+  \vspace*{\dimexpr-\parskip-\baselineskip+#2}
+  \begingroup
+  	\color{sepcol}
+  	\noindent\rule{\linewidth}{#1}\par
+  \endgroup  
+  \vspace*{\dimexpr-\parskip-.5\baselineskip+#2}}
+  
+\begin{document}
+\newgeometry{top=3.3in}
+\ThisULCornerWallPaper{1}{pageTopBannerDesert.jpg}%This line is used to insert a nice top banner if you have one, the banner should have a full page background that matches the normal background. If you have no Banner remove this line.
+\begin{multicols}{2}
+\dndtitle{26pt}{Desert Walkers}
+Flavor text about alchemists here.\\
+\\
+\dndtitle{16pt}{Water is Life}
+Some more Flavor Text\\
+\\
+\dndtitle{16pt}{Survivor}
+Even more Flavor Text\\
+\\
+\dndtitle{18pt}{Prerequisites}
+In order to become and advance as a desert walker you must meet the following following prerequisites(in addition to the multiclassing prerequisites for your existing class):\\
+\\
+\begin{itemize}
+\item \textbf{Constitution 13.} The life in the desert is difficult and harsh.
+\item \textbf{Wisdom 13.} The desert walkers have learned to survive through experience and will.
+\item \textbf{Years in the deser.} Most have spent a long time in the desert to learn how to survive their.
+\item \textbf{Character level 5th.} It requires patience, experience and powerful character to learn the secrets of the desert walkers.
+\end{itemize}
+\end{multicols}
+\newpage
+\restoregeometry
+\ThisCenterWallPaper{1}{pageBackgroundTablePrestige.jpg}
+\begin{textblock}{16}(1,0.2)
+\textsc{\textbf{The Desert Walker}}
+\end{textblock}
+\begin{picture}(30,120)(-31,-50)
+\label{my-label}
+\begin{tabular}{cp{130mm}}
+                        &                          						\\
+\multirow{-2}{*}{Level} & \multirow{-2}{*}{Features}					\\
+\rowcolor[HTML]{B8EFAD} 
+1st                     & Desert walker									\\
+2nd                     & Water affinity, locate water					\\
+\rowcolor[HTML]{B8EFAD}	
+3rd                     & Make water, fire resistance					\\
+4th                     & Sap Water										\\
+\rowcolor[HTML]{B8EFAD} 
+5th                     & Secrets of the desert							\\
+\end{tabular}
+\end{picture}
+\begin{multicols}{2}
+\dndtitle{18pt}{Class Features}
+As a desert walker you gain the following class features.\\
+\\
+\dndtitle{14pt}{Hit Point}
+\textbf{Hit Dice:} 1d8 per desert walker level\\
+\textbf{Hit Points at 1st level:} 8 + your Constitution modifier\\
+\textbf{Hit Points at higher level:} 1d8(or 5) + your Constitution modifier per desert walker level after 1st\\
+\\
+\dndtitle{14pt}{Proficiencies}
+\textbf{Saving Throws:} None\\
+\textbf{Skills:} Survival, Acrobatics\\
+\\
+\dndtitle{16pt}{Spell Slots}
+When consulting the Multiclass Spellcaster table (Players Handbook page 165) you add half your level in this class rounded up to your other levels to determine how many spell slots you have per spell level.\\\\
+\indent If you have no other class capable of spellcasting you still gain the appropriate amount of spell slots according to half your level round up in this class.\\
+\\
+\dndtitle{16pt}{Desert Walker}
+At 1st level you already learn some of the secret of the desert walkers, how to survive in the desert especially where and how to find water.\\
+\indent You have advantage on Medicine(Wis), Nature(Int) and Survival(Wis) skill checks made in the desert.\\
+\indent Additionally you have advantage on saves to resist exhaustion gained from being to warm or dehydrated.\\
+\\
+\dndtitle{16pt}{Water Affinity}
+At 2nd level you become more attuned to the water you have learned how to use. A simple water skin is more useful to you than most people would think. A water skin have the following uses and benefits for you.\\
+\indent You can use a full water skin as a spellcasting focus for any class, you have to refill it every short rest if you have cast a spell with wich you used the water skin, as some water is used everytime.\\
+\indent As a bonus action you can squirt a small amount of water into an opponents face, granting you advantage on your next attack roll the same round. This can be done a number of times equal to your Wisdom modifier. You regain all expended uses when you refill your water skin.\\
+\indent Refilling the water skin requires a source of water and takes 5 minutes to complete fill.\\
+\\
+\dndtitle{16pt}{Locate Water}
+At 2nd level you become capable of finding water any where, by spending a half hour meditating you become aware of the closest source of water that is within 1 mile per level of you.\\
+\indent You can use this ability a number of times equal to your Wisdom modifier + 1 (a minimum of once). You regain all expended uses when you finish a long rest.\\
+\\
+\dndtitle{16pt}{Make Water}
+At 3rd level you learn a secret to suck moisture from the air during the night, at the start of a long rest that is going to go through the night, you can set up a contraption to collect water. This takes about an hour to set up, and during the night your set up collects water for 4 creatures.\\
+\\
+\dndtitle{16pt}{Fire Resistance}
+At 3rd level you become used to the heat of the desert to the point where you actually become resistant to fire and heat. You gain resistance to fire damage.\\
+\indent If you already have resistance to fire damage you gain advantage on all saves against all effects that deal fire damage.\\
+\\
+\dndtitle{16pt}{Sap Water}
+At 4th level you learn how to sap the water from a creature you strike. When you strike a target you can deal an additional 1d6 fire damage to them.\\
+\indent You can expend a spell slot to deal an extra 1d6 fire damage per level of the spell slot expended. You can only expend spell slots of 3rd level or lower.\\
+\indent If this strike kills the target you regain hitpoints eqaul to the amount of fire damage dealt to the target.\\
+\indent This ability does not work on creatures of the following types: Undead, Constructs or Elemental(Unless the creature is made of water, or uses water)\\
+\\
+\dndtitle{16pt}{Secrets of the Desert}
+At 5th level you learn the greatest secret of the desert, the sacred oasis's that is plotted different places in the desert. These places hold great power for all who know how to harness its power.\\
+\indent By bathing in the waters of these sacred oasis's for at least an hour you gain one of the following benefits.\\
+\begin{itemize}
+\item Immunity to Fire until your next long rest.
+\item No need to drink water for 2 weeks
+\item Count as having completed a long rest
+\item Count as having cast one of the following spells:
+\begin{itemize}
+\item Legend Lore
+\item Locate Object
+\item Locate Creature
+\item Scrying
+\end{itemize}
+\item Count as having received one of the following spells:
+\begin{itemize}
+\item Greater Restoration
+\end{itemize}
+\item Cause it to rain, it keeps raining for as long as you keep concentration on the rain.
+\end{itemize}
+\indent When applicable your spellcasting modifier is Wisdom.\\
+\indent Additionally your allies can also gain some benefits chosen by you by showing them some physical exercise they need to deal while bathing. These benefits can also be chosen by you instead of those above. The benefits availabe are:\\
+\begin{itemize}
+\item Resistance to Fire until your next long rest
+\item No need to drink for 1 week
+\item Count as having completed a long rest
+\item Count as having received one of the following spells:
+\begin{itemize}
+\item Aid
+\item Cure Wounds cast by 2nd level slot
+\item Lesser Restoration
+\item Water Breathing
+\end{itemize}
+\end{itemize}
+\end{multicols}
+\end{document}

@@ -1,0 +1,146 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{textpos}
+\usepackage{pdfpages}
+\usepackage{fontspec}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{wallpaper}
+\captionsetup[table]{labelformat=empty}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\definecolor{title}{RGB}{94,18,0}
+\definecolor{sepcol}{RGB}{186,159,11}
+
+\usepackage[top=0.6in, left=0.6in, right=0.6in, bottom=1in]{geometry}%Change the top to 0.6 if you have no banner, or increase/decrease if your banner is of different height
+\ULCornerWallPaper{1}{pageBackground.jpg}%This is the background used, this shouldn't be changed.
+\newfontfamily\bookmania{Bookmania}
+\setmainfont{Bookmania}[Scale=0.9]
+
+\newcommand{\dndtitle}[2]{\noindent{\fontsize{#1}{#1}\textcolor{title}{\textsc{#2}}}\newline}
+
+\newcommand{\HRule}[2]{\par
+  \vspace*{\dimexpr-\parskip-\baselineskip+#2}
+  \begingroup
+  	\color{sepcol}
+  	\noindent\rule{\linewidth}{#1}\par
+  \endgroup  
+  \vspace*{\dimexpr-\parskip-.5\baselineskip+#2}}
+  
+\begin{document}
+\newgeometry{top=4.5in}
+\ThisULCornerWallPaper{1}{pageTopBannerHexblade.jpg}%This line is used to insert a nice top banner if you have one, the banner should have a full page background that matches the normal background. If you have no Banner remove this line.
+\begin{multicols}{2}
+\dndtitle{26pt}{<Class Name>}
+%Flavor text here:
+\\
+\\
+\dndtitle{16pt}{<Class Talk1>}
+%Flavor Text
+\\
+\\
+\dndtitle{16pt}{<Clas Talk2>}
+%Flavor Text
+\\
+\\
+\dndtitle{16pt}{Creating a <Class Name>}
+%Write here how a person becomes a <Class Name>
+\\
+\\
+\dndtitle{14pt}{Quickbuild}
+%Write here how to quickly make a character of this class
+\\
+\\
+\dndtitle{18pt}{Class Features}
+As a <Class Name> you gain the following class features.\\
+\\
+\dndtitle{14pt}{Hit Point}
+\textbf{Hit Dice:} ?d? per <class name> level\\
+\textbf{Hit Points at 1st level:} <max of HD> + your Constitution modifier\\
+\textbf{Hit Points at higher level:} ?d?(or <average>) + your Constitution modifier per <class name> level after 1st\\
+\\
+\dndtitle{14pt}{Proficiencies}
+\textbf{Armor:} What armor and shield the class can use\\
+\textbf{Weapons:} what weapons the class can use\\
+\textbf{Tools:} What tools the class can use\\
+\textbf{Saving Throws:} one of(Charisma, Strength, Intelligence) and one of (Wisdom, Dexterity, Constitution)\\
+\textbf{Skills:} Choose two from 6 skills\\
+\\
+\end{multicols}
+\newpage
+\restoregeometry
+\ThisCenterWallPaper{1}{pageBackgroundTable.jpg}
+\begin{textblock}{16}(0.9,0.1)
+\textsc{The <Hexblade>}
+\end{textblock}
+\begin{picture}(30,350)(-30,-195)
+\label{my-label}
+\begin{tabular}{ccp{52mm}ccc}
+                        &                                     											&                             & \multicolumn{3}{c}{-Meldshaping-}		\\
+\multirow{-2}{*}{Level} & \multirow{-2}{*}{\begin{tabular}[x]{@{}c@{}}Proficiency\\Bonus\end{tabular}} & \multirow{-2}{*}{Features}   & Soulmelds	& Essentia	& Chakra Binds  \\
+\rowcolor[HTML]{B8EFAD} 
+1st                     & +2   								  & 													&& -       & -      		\\
+2nd                     & +2                                  & 													&& -       & -      		\\
+\rowcolor[HTML]{B8EFAD}
+3rd                     & +2                                  & 													&& -       & -      \\
+4th                     & +2                                  & 													&& -       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+5th                     & +3                                  & 													&& -       & -      \\
+6th                     & +3                                  &														&& -       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+7th                     & +3                                  & 													&& -       & -      \\
+8th                     & +3                                  & 													&& -       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+9th                     & +4                                  & 													&& -       & -      \\
+10th                    & +4                                  & 													&& -       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+11th                    & +4                                  & 													&& -       & -      \\
+12th                    & +4                                  & 													&& -       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+13th                    & +5                                  & 													&& 1       & -      \\
+14th                    & +5                                  & 													&& 1       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+15th                    & +5                                  & 													&& 2       & -       \\
+16th                    & +5                                  & 													&& 2       & -       \\
+\rowcolor[HTML]{B8EFAD} 
+17th                    & +6                                  &														&& 3       & 1       \\
+18th                    & +6                                  &														&& 3       & 1       \\
+\rowcolor[HTML]{B8EFAD} 
+19th                    & +6                                  & 													&& 3       & 2       \\
+20th                    & +6                                  & 													&& 3       & 2      
+\end{tabular}
+\end{picture}
+\begin{multicols}{2}
+\dndtitle{14pt}{Equipment}
+You start with the following equipment in addition to the equipment granted by your background.	
+\begin{itemize}
+\item Any martial melee weapon
+\item (a)A scale mail or (b) a studded leather
+\item (a)A crossbow and 20 bolts or (b)5 javelins
+\item (a)A dungeoneer's pack or (b)a explorers pack%This is only an example
+\end{itemize}
+If your gm allows you to purchase your equipment you start with 5d4x10 gold\\
+\\
+\dndtitle{16pt}{<Feature Name>}
+%Text here
+\\
+\\
+\dndtitle{18pt}{<Archetypes>}
+%Text here
+\\
+\\
+\dndtitle{16pt}{<Archetype Name>}
+%Text here
+\\
+\\
+\dndtitle{14pt}{<Archetype Feature>}
+%Text here
+\\
+\\
+\end{multicols}
+\end{document}

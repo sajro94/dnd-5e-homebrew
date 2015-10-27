@@ -1,0 +1,362 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{textpos}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{wallpaper}
+\captionsetup[table]{labelformat=empty}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{dndpreamble}
+
+\hypersetup{colorlinks=true, urlcolor=blue}
+
+\usepackage[top=0.6in, left=0.6in, right=0.6in, bottom=1in]{geometry}%Change the top to 0.6 if you have no banner, or increase/decrease if your banner is of different height
+\ULCornerWallPaper{1}{pageBackground.jpg}%This is the background used, this shouldn't be changed.
+\newfontfamily\bookmania{Bookmania}
+\setmainfont{Bookmania}[Scale=0.9]
+\begin{document}
+\newgeometry{top=4.5in}
+\ThisULCornerWallPaper{1}{pageTopBannerHexblade.jpg}%This line is used to insert a nice top banner if you have one, the banner should have a full page background that matches the normal background. If you have no Banner remove this line.
+\begin{multicols}{2}
+\dndtitle{26pt}{Hexblade}
+You see a man standing lightly armored, with a sword in his hands. Fighting some sort of evil, then suddenly his eyes turns a vibrant purple and his foe seems to take the hits worse and worse, almost as if the foe have been cursed. Whatever evil he is facing cast some spell at the man, yet despite the fire, explosion and certain doom he seems to walk out without as much as a scratch.\\
+\indent Holding his hands above himself toward a crowd of people, stands a elf, his eyes vibrant purple and everyone seems to just listen and hang at his every single word. Everyone seems to love him wanting to do what he says even when he asks the crowd to execute a random they seem happy to do it.\\
+Whatever they use it for all hexblades use some sort of dark enchanting magic, it seems to be able to enchant both themselves and everyone around them, yet they are still dangerous martial combatants.\\
+\\
+\dndtitle{16pt}{Fight Fire With Fire}
+Hexblades excel at fighting dark magic by utilizing their own dark magic to do so.\\
+\\
+\dndtitle{16pt}{Fighting Men}
+Hexblade are taught, or simply learn themselves, how to fight as well as how to use magic.\\
+\\
+\dndtitle{16pt}{Creating a Hexblade}
+When you are making your hexblade think about why he learns to use this dark magic. Is it to kill evil casters, do he want to gain power and fame, or does he have some other goal he want to accomplish with it. Who taught you the secrets of the hexblade, what lead to him or her accepting you as an apprentice? Did you do something for your teacher or maybe the opposite? Did your master simply force into this life?\\
+\\
+\dndtitle{14pt}{Quickbuild}
+You can quickly make a Hhexblade by doing the following.\\
+First make Charisma your highest ability score, followed by either Strength or Dexterity.\\
+Second choose the Soldier background\\
+Third choose a greatsword if your Strength is greater than your Dexterity, otherwise choose a rapier\\
+\\
+\dndtitle{18pt}{Class Features}
+As a hexblade you gain the following class features.\\
+\\
+\dndtitle{14pt}{Hit Point}
+\textbf{Hit Dice:} 1d10 per hexblade level\\
+\textbf{Hit Points at 1st level:} 10 + your Constitution modifier\\
+\textbf{Hit Points at higher level:} 1d10(or 6) + your Constitution modifier per hexblade level after 1st\\
+\\
+\dndtitle{14pt}{Proficiencies}
+\textbf{Armor:} Light and medium armor, no shields\\
+\textbf{Weapons:} All simple and martial weapons\\
+\textbf{Tools:} Choose one type of artisan's tools, or one musical instrument\\
+\textbf{Saving Throws:} Charisma, Dexterity\\
+\textbf{Skills:} Choose two from Acrobatics, Arcana, Athletics, Insight, Deception, Intimidation\\
+\\
+\end{multicols}
+\newpage
+\restoregeometry
+\ThisCenterWallPaper{1}{pageBackgroundTable.jpg}
+\begin{textblock}{16}(0.9,0.1)
+\textsc{The Hexblade}
+\end{textblock}
+\begin{picture}(30,350)(-30,-195)
+\label{my-label}
+\begin{tabular}{ccp{52mm}cccccc}
+                        &                                     											&                             &  									&\multicolumn{5}{c}{-Spell Slots per Spell Level-}\\
+\multirow{-2}{*}{Level} & \multirow{-2}{*}{\begin{tabular}[x]{@{}c@{}}Proficiency\\Bonus\end{tabular}} & \multirow{-2}{*}{Features}   & \multirow{-2}{*}{\begin{tabular}[x]{@{}c@{}}Spells\\Known\end{tabular}} & 1st    & 2nd    & 3rd   & 4th   & 5th \\
+\rowcolor[HTML]{B8EFAD} 
+1st                     & +2                                  & Cantrips, Hexblades Curse							&-& -        & -        & -       & -       & -      \\
+2nd                     & +2                                  & Fighting Style, Arcane Resistance, Spellcasting		&2& 2        & -        & -       & -       & -      \\
+\rowcolor[HTML]{B8EFAD}
+3rd                     & +2                                  & Arcane Path					                		&3& 3        & -        & -       & -       & -      \\
+4th                     & +2                                  & Ability Score Improvement                  			&3& 3        & -        & -       & -       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+5th                     & +3                                  & Extra Attack                               			&4& 4        & 2        & -       & -       & -      \\
+6th                     & +3                                  & Enthropic Ward                 						&4& 4        & 2        & -       & -       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+7th                     & +3                                  & Path Feature										&5& 4        & 3        & -       & -       & -      \\
+8th                     & +3                                  & Ability Score Improvement                  			&5& 4        & 3        & -       & -       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+9th                     & +4                                  & -													&6& 4        & 3        & 2       & -       & -      \\
+10th                    & +4                                  & Dire Hex											&6& 4        & 3        & 2       & -       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+11th                    & +4                                  & Path Feature										&7& 4        & 3        & 3       & -       & -      \\
+12th                    & +4                                  & Ability Score Improvement							&7& 4        & 3        & 3       & -       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+13th                    & +5                                  & -													&8& 4        & 3        & 3       & 1       & -      \\
+14th                    & +5                                  & Swift Spell											&8& 4        & 3        & 3       & 1       & -      \\
+\rowcolor[HTML]{B8EFAD} 
+15th                    & +5                                  & Touch of disruption									&9& 4        & 3        & 3       & 2       & -       \\
+16th                    & +5                                  & Ability Score Improvement							&9& 4        & 3        & 3       & 2       & -       \\
+\rowcolor[HTML]{B8EFAD} 
+17th                    & +6                                  & Path Feature										&10& 4        & 3        & 3       & 3       & 1       \\
+18th                    & +6                                  & Improved Arcane Resistance							&10& 4        & 3        & 3       & 3       & 1       \\
+\rowcolor[HTML]{B8EFAD} 
+19th                    & +6                                  & Ability Score Improvement							&11& 4        & 3        & 3       & 3       & 2       \\
+20th                    & +6                                  & Bringer of Destruction								&11& 4        & 3        & 3       & 3       & 2      
+\end{tabular}
+\end{picture}
+\begin{multicols}{2}
+\dndtitle{14pt}{Equipment}
+You start with the following equipment in addition to the equipment granted by your background.	
+\begin{itemize}
+\item Any martial melee weapon
+\item (a)A scale mail or (b) a studded leather
+\item (a)A crossbow and 20 bolts or (b)5 javelins
+\item (a)A dungeoneer's pack or (b)a explorers pack
+\end{itemize}
+If your gm allows you to purchase your equipment you start with 5d4x10 gold\\
+\\
+\dndtitle{16pt}{Cantrips}
+At first level you learn the cantrips: \textit{dancing lights}, \textit{prestidigitation} and \textit{magehand}\\
+\\
+\dndtitle{16pt}{Hexblades Curse}
+At 1st level you can cast \textit{hex} at a target creature. This functions exactly like the spell, as if cast from your highest spell slot\\
+This requires concentration.\\
+After you use this ability you have to complete a short rest to use it again\\
+\\
+At every level you gain access to a new spell level you can use Hex one additional time per short rest.\\\\
+\dndtitle{16pt}{Arcane Resistance}
+At 2nd level you can add your proficiency bonus to any save against spell effects, if you don't already have proficiency in the save used against that spell.\\
+\\
+\dndtitle{16pt}{Fighting Style}
+At 2nd level choose one of the following fighting styles and gain its benefits\\
+\dndtitle{14pt}{Defense}
+While you are wearing armor, you gain a +1 bonus to AC.\\
+\\
+\dndtitle{14pt}{Dueling}
+When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\\
+\\
+\dndtitle{14pt}{Great Weapon Fighting}
+When you roll a 1 or a 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.\\
+\\
+\dndtitle{14pt}{Two-Weapon Fighting}
+When you engage in two-weapon fighting, you can add your ability modifier to the damage of the bonus action attack.\\
+\\
+\dndtitle{16pt}{Spellcasting}
+By the time you reach 2nd level, you have learned to use some sort of magic, most probably thinks it comes from the same patrons that warlocks draw their power from, but noone really knows. You learn to cast arcane spells much the same way a sorcerer does, however in a more restrictive manner. See chapter 10 of the PHB for the general rules of spellcasting.\\
+\\
+\dndtitle{12pt}{Spell Slots}
+The Hexblade table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a spell slot of the spells level or higher. You regain all expended spell slots when you finish a long rest.\\
+\indent For example if you know the 1st level spell \textit{Charm Person} and have atleast a 1st-level and a 2nd-level spell slot available, you can cast it using both.\\
+\\
+\dndtitle{12pt}{Spells Known of 1st Level and Higher}
+You know two 1st-level spells of your choice from the hexblade spell list.\\
+\indent The Spells Known column of the hexblade table shows when you learn more hexblade spells of your choice. Each of these spells must be of a level of which you have spell slots. For instance when you reach 5th level in this class, you can learn one new spell of 1st or 2nd leve. \\
+\indent Additionally, when you gain a level in this class, you can choose one hexblade spell you know and replace it with another spell from the hexblade spell list, which also must be of a spell level you have spell slots.\\\\
+\dndtitle{12pt}{Spellcasting Ability}
+Charisma is your spellcasting ability for your hexblade spells, since your magic draws through yourself. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a hexblade spell you cast and when making an attack roll with one.
+\begin{center}
+\textbf{Spell save DC =} 8 + your proficiency bonus + your Charisma modifier\\
+\textbf{Spell attack modifier =} your proficiency bonus + your Charisma modifier\\
+\end{center} 
+\dndtitle{16pt}{Arcane Path}
+At 3rd level you choose your arcane path, to show how you want to use your magical powers. Choose Witch hunter, Beguiler or Hexer, all detailed at the end of the class description. The archetype you choose grants you features at 3rd level and again at 7th, 11th and 17th level\\
+\\
+\dndtitle{16pt}{Ability Score Improvement}
+When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.\\
+\\
+\dndtitle{16pt}{Enthropic Ward}
+At 6th level you can use your reaction to impose disadvantage against a attack.\\
+Once you have used this ability you must complete a short rest to regain it.\\
+\\
+\dndtitle{16pt}{Dire Hex}
+At 10th level when an ally attack a creature that you have hexed, you can use an reaction to cause your allies attacks to count as yours for the purpose of \textit{hex}, this lasts his whole turn.\\
+You can use this ability a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a long rest.\\
+\\
+\dndtitle{16pt}{Swift Spell}
+At 14th level you can cast a hexblade spell of level 1 or higher as a bonus action, but after doing this you have to complete a short rest to do it again.\\
+\\
+\dndtitle{16pt}{Touch of Disruption}
+Beginning at 15th level, you can use your action to end one spell on yourself or on one willing creature that you touch. You can use this feature a number of times equal to your Charisma modifier (a minimum of once).\\
+You regain expended uses when you finish a long rest.\\
+\\
+\dndtitle{16pt}{Improved Arcane Resistance}
+at 18th level you have advantage on saves against spell effects, and you have resistance to spell damage.\\
+\\
+\dndtitle{16pt}{Bringer of Destruction}
+at 20th level you can as a bonus action you can cast \textit{hex} on every creature within 60 feet of you.\\
+Additionally all allies can trigger these Hexes for 1 minute.\\
+\\
+\dndtitle{18pt}{Arcane Paths}
+Different hexblades choose to use their powers for different purposes. The arcane path you choose tries to emulate what approach you take.\\
+\\
+\dndtitle{16pt}{Witchhunter}
+The typical witch hunter, he hunts and kills casters that are using their powers to wrong other people.\\
+\\
+\dndtitle{14pt}{Spells}
+\begin{tabular}{cp{5cm}}
+{\bf Hexblade Level} & {\bf Spells}                         \\
+\rowcolor[HTML]{B8EFAD} 
+3rd                 & \textit{entangle, detect magic}\\
+5th                 & \textit{silence, hold person}\\
+\rowcolor[HTML]{B8EFAD} 
+9th                 & \textit{slow, counterspell}\\
+13th                & \textit{freedom of movement, arcane eye}\\
+\rowcolor[HTML]{B8EFAD} 
+17th                & \textit{telekinesis, dispel evil and good}\\
+\end{tabular}
+\\You get these spells as known at the listed level, these known spells are in addition to you normally known spells.\\
+\indent Additionally you gain the cantrip \textit{resistance}\\
+\\
+\dndtitle{14pt}{Disrupting Shout}
+Beginning when you choose this path at 3rd level, you learn to make a special yell that can cause casters to fail in concentrating on a spell or even casting it in the first place.\\
+As an reaction or action you can let out a shout, any spellcaster within 10 feet of you currently casting a spell or concentrating on a spell must make a concentration check against your Spell save DC or lose concentration. If they were casting a spell they simply fail in the casting, but regain the spell slot after 1d4 rounds.\\
+After using this ability you have to complete a short rest before you can use it again.\\
+\\
+\dndtitle{14pt}{Deflecting Strike}
+At 7th level, you can use your reaction to attempt to block an incoming spell attack with your blade. You make an attack roll as normal against the spell. It has an AC equal to the casters attack roll for the spell. If you hit the spell you destroy the spell.\\
+This ability works only against spells with attack rolls.\\
+\\
+\dndtitle{14pt}{Antimagic}
+At 11th level, you can create an area where no magic is capable of functioning. You can cast the spell \textit{antimagic field} with the change that it lasts for only 10 minutes.\\
+You can use this ability a number of times equal to your Charisma modifier before having to complete a long rest to regain all uses.\\
+\\
+\dndtitle{14pt}{Magic Destruction}
+At 17th level you become capable of turning any casters own magic powers against them. When you make an attack against a caster you cause them to take damage. This damage is a number of d10's equal to your Charisma modifier + your targets highest unexpended spell slot.\\
+For example if you attack a level 17 Wizard an choose to use this ability, and you have a Charisma of 20, he would take 14d10 damage. 9 from his unexpended 9th level spell slot and 5 from your Charisma modifier.\\
+After using this ability you have to complete a long rest before using it again.\\
+\\
+\dndtitle{16pt}{Beguiler}
+Beguilers are the hexblades that decide to take what they want, either though force or by beguiling people to give them everything.\\
+\\
+\dndtitle{14pt}{Spells}
+\begin{tabular}{cp{5cm}}
+{\bf Hexblade Level} & {\bf Spells}                         \\
+\rowcolor[HTML]{B8EFAD} 
+3rd                 & \textit{compelled duel, charm person}\\
+5th                 & \textit{alter self, enthrall}\\
+\rowcolor[HTML]{B8EFAD} 
+9th                 & \textit{nondetection, fear}\\
+13th                & \textit{confusion, compulsion}\\
+\rowcolor[HTML]{B8EFAD} 
+17th                & \textit{hold monster, dominate person}\\
+\end{tabular}
+\\You get these spells as known at the listed level, these known spells are in addition to you normally known spells.\\
+Additionally you gain the cantrip \textit{friends}\\
+\\
+\dndtitle{14pt}{Beguiling Influence}
+At 3rd level when you adopt this path you gain advantage on all Charisma based skills.\\
+\\
+\dndtitle{14pt}{Beguiling Spell}
+At 7th level when you cast a enchantment spell, you can give your target disadvantage on the save.\\
+You can use this ability a number of times equal to your Charisma modifier before needing to complete a long rest to regain all uses.\\
+\\
+\dndtitle{14pt}{Charmer}
+At 11th level you have advantage on saving throws against enchantment spells and advantage on attacks against creatures you have charmed
+\indent Additionally you do not break the charmed condition by attacking instantly, instead the creature makes a new save of the same type as the one used for the spell affecting them, if they succeed the charm is broken.\\
+\indent The DC of the saving throw is your spell DC\\
+\\
+\dndtitle{14pt}{Total Dominance}
+At 17th level, you become capable of forcing people to do what ever you want. Whenever you have a creature affected by a mind affecting enchantment spell, you can ask it to do anything. This includes doing things that are obviously dangerous to the creature.\\
+If the order is sure, from the targets point of view, to result in injury it gains a saving throw to resist it against your spell save DC, if the creature is sure that it would result in its death it has advantage on the roll.\\
+After using this ability you have to complete a long rest before using it again.\\
+\\
+\dndtitle{16pt}{Hexer}
+These hexblades mostly just want to hex everyone and everything, they have no real agenda other than doing what they want.\\
+\\
+\dndtitle{14pt}{Spells}
+\begin{tabular}{cp{5cm}}
+{\bf Hexblade Level} & {\bf Spells}                         \\
+\rowcolor[HTML]{B8EFAD} 
+3rd                 & \textit{bane, chromatic orb}\\
+5th                 & \textit{knock, flame blade}\\
+\rowcolor[HTML]{B8EFAD} 
+9th                 & \textit{bestow curse, hunger of hadar}\\
+13th                & \textit{wall of fire, phantasmal killer}\\
+\rowcolor[HTML]{B8EFAD} 
+17th                & \textit{cloudkill, contagion}\\
+\end{tabular}
+\\You get these spells as known at the listed level, these known spells are in addition to you normally known spells.\\
+Additionally you gain the cantrip \textit{blade ward}\\
+\\
+\dndtitle{14pt}{Dirty Hexer}
+At 3rd level when choosing this path you gain the ability to grant yourself advantage on a attack against any creature affect by a hex cast by you.\\
+You can only use this ability on a single attack, and only once per turn.\\
+\\
+\dndtitle{14pt}{Greater Hexing}
+At 7th level when you cast a \textit{hex} at someone, they take an initial 1d6 points of necrotic damage. Additionally the damage dealt by \textit{hex} is increased to a d8.\\
+\\
+\dndtitle{14pt}{Destructive Hex}
+At 11th level the damage you deal with your \textit{hex} can be any of the following at your choice: fire, cold, lightning, sonic, necrotic, radiant or acid.\\
+The choice is made every time the \textit{hex} deals damage to a target.\\
+Additionally the damage increases to 1d10 of your \textit{hex}.\\
+\\
+\dndtitle{14pt}{Deadly Hex}
+At 17th level, when a creature you have hexed is reduced to half hit points or lower by the \textit{hex}, it most succeed on a Constitution save or be reduced to 0 HP, if it succeeds it instead takes 10d10 points of damage of the same type as the \textit{hex} just dealt to them.\\
+After using this ability you have to complete a long rest before using this abiity again.\\
+\newpage
+\dndtitle{26pt}{Spell List}
+\dndtitle{18pt}{1st Level Spells}
+Alarm\\
+Armor of Agathys\\
+Bane\\
+Burning Hands\\
+Color Spray\\
+Compelled Duel\\
+Entangle\\
+False Life\\
+Longstrider\\
+Mage Armor\\
+Silent Image\\
+Witch Bolt\\
+
+\dndtitle{18pt}{2nd Level Spells}
+Alter Self\\
+Arcane Lock\\
+Blindness/Deafness\\
+Cloud of Daggers\\\\
+Enhance Ability\\
+Knock\\
+Mirror Image\\
+Scorching Ray\\
+Silence\\
+Suggestion\\
+
+\dndtitle{18pt}{3rd Level Spells}
+Bestow Curse\\
+Blink\\
+Conjure Barrage\\
+Elemental Weapon\\
+Gaseous Form\\
+Nondetection\\
+Slow\\
+Stinking Cloud\\
+Vampiric Touch\\
+
+\dndtitle{18pt}{4th Level Spells}
+Confusion\\
+Death Ward\\
+Fabricate\\
+Freedom of Movement\\
+Greater Invisibility\\
+Polymorph\\
+Stoneskin\\
+Wall of fire\\
+
+\dndtitle{18pt}{5th Level Spells}
+Antilife Shell\\
+Cloudkill\\
+Cone of Cold\\
+Conjure Volley\\
+Flame Strike\\
+Hold Monster\\
+Raise Dead\\
+Telekinesis\\
+Wall of Force\\
+\end{multicols}
+\vspace{22pt}
+\noindent\textit{"Witch Hunter" by Emaduddin used as banner(modified)}
+\\
+\\
+\textit{Background made from guide by \href{https://www.reddit.com/r/UnearthedArcana/comments/3qb7tp/paladin_oath_of_battle_critique_very_welcome/cwdprpo}{/u/the\_singular\_anyone} also \href{http://walrock-homebrew.blogspot.com}{http://walrock-homebrew.blogspot.com}}	
+\end{document}

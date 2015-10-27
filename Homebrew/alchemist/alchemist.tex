@@ -1,0 +1,128 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{textpos}
+\usepackage{pdfpages}
+\usepackage{fontspec}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{wallpaper}
+\captionsetup[table]{labelformat=empty}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\definecolor{title}{RGB}{94,18,0}
+\definecolor{sepcol}{RGB}{186,159,11}
+
+\usepackage[top=0.6in, left=0.6in, right=0.6in, bottom=1in]{geometry}%Change the top to 0.6 if you have no banner, or increase/decrease if your banner is of different height
+\ULCornerWallPaper{1}{pageBackground.jpg}%This is the background used, this shouldn't be changed.
+\newfontfamily\bookmania{Bookmania}
+\setmainfont{Bookmania}[Scale=0.9]
+
+\newcommand{\dndtitle}[2]{\noindent{\fontsize{#1}{#1}\textcolor{title}{\textsc{#2}}}\newline}
+
+\newcommand{\HRule}[2]{\par
+  \vspace*{\dimexpr-\parskip-\baselineskip+#2}
+  \begingroup
+  	\color{sepcol}
+  	\noindent\rule{\linewidth}{#1}\par
+  \endgroup  
+  \vspace*{\dimexpr-\parskip-.5\baselineskip+#2}}
+  
+\begin{document}
+\newgeometry{top=4.0in}
+\ThisULCornerWallPaper{1}{pageTopBannerAlchemist.jpg}%This line is used to insert a nice top banner if you have one, the banner should have a full page background that matches the normal background. If you have no Banner remove this line.
+\begin{multicols}{2}
+\dndtitle{26pt}{Alchemists}
+Flavor text about alchemists here.\\
+\\
+\dndtitle{16pt}{Geniuses}
+Some more Flavor Text\\
+\\
+\dndtitle{16pt}{Madmen}
+Even more Flavor Text\\
+\\
+\dndtitle{18pt}{Prerequisites}
+In order to become and advance as a alchemist you must meet the following following prerequisites(in addition to the multiclassing prerequisites for your existing class):\\
+\\
+\begin{itemize}
+\item \textbf{Constitution 13.} Your body needs to be strong enough to handle testing your own mixtures.
+\item \textbf{Intelligence 13.} Being a "scientist" requires intelligence, especially when failure is very dangerous.
+\item \textbf{Character level 5th.} Only the experienced can learn how to combine mundane items with some sort of magic.
+\item \textbf{The Teacher.} Becoming an alchemist is not easy and someone need to teach you how, so you need to find an alchemist who can teach you the secrets.
+\end{itemize}
+\end{multicols}
+\newpage
+\restoregeometry
+\ThisCenterWallPaper{1}{pageBackgroundTablePrestige.jpg}
+\begin{textblock}{16}(1,0.2)
+\textsc{\textbf{The Alchemists}}
+\end{textblock}
+\begin{picture}(30,120)(-31,-50)
+\label{my-label}
+\begin{tabular}{cp{104.5mm}cc}
+                        &                          						&\multicolumn{2}{c}{-Brewing-}	\\
+\multirow{-2}{*}{Level} & \multirow{-2}{*}{Features}					&		Known	&	Level		\\
+\rowcolor[HTML]{B8EFAD} 
+1st                     & Potion Brewing, Accidental Exposure, Bombs	&		2		&	1st			\\
+2nd                     & Poison Creation								&		3		&	1st			\\
+\rowcolor[HTML]{B8EFAD}	
+3rd                     & Alchemical Discovery							&		4		&	2nd			\\
+4th                     & Mutagen										&		5		&	2nd			\\
+\rowcolor[HTML]{B8EFAD} 
+5th                     & Alchemical Theorem							&		6		&	3rd
+\end{tabular}
+\end{picture}
+\begin{multicols}{2}
+\dndtitle{18pt}{Class Features}
+As an alchemist you gain the following class features.\\
+\\
+\dndtitle{14pt}{Hit Point}
+\textbf{Hit Dice:} 1d6 per alchemist level\\
+\textbf{Hit Points at 1st level:} 6 + your Constitution modifier\\
+\textbf{Hit Points at higher level:} 1d6(or 4) + your Constitution modifier per alchemist level after 1st\\
+\\
+\dndtitle{14pt}{Proficiencies}
+\textbf{Saving Throws:} Herbalism Kit\\
+\textbf{Skills:} Animal Handling, Survival\\
+\\
+\dndtitle{16pt}{Potion Brewing}
+Starting at 1st level you learn the foundation of powerful potions. You learn how to infuse special mixtures with arcane magic.\\
+\indent You know spells and how to use them but you aren't actually capable of casting them, instead you infuse them into a potion\\
+\indent Starting at 1st level you know 2 spells as listed, these spells have to be of a level you can use, as denoted in the Level column of the Alchemist Table. You learn one additional spell at each level, and you can also swap one spell.\\
+These spells have to have either a target of either self, or single creature.\\
+\\
+Instead of casting spells you can infuse these spells into a potion and when the potion is drunk, then the drinker is affected as if by the spell. You can only produce potions of the lowest slot the spell can be cast from.\\
+\indent Your Spellcasting Ability is Intelligence\\
+\indent Creating a bomb requires a fire place, a herbalism kit, some simple herbs, and a catalyst. The catalyst can be many things, and it is this catalyst that makes a potion cost 5gp to make each. Additionally you have to supply all material components that have a listed price. Making a potion takes 10 minutes.\\
+\indent The spellcasting DC if appropiate for you is: \textbf{8 + proficiency bonus + Intelligence modifier}\\
+\\
+\dndtitle{16pt}{Accidental Exposure}
+Already at 1st level have you exposed yourself to random stuff through your training, this have made your rather resistant to poisons and toxins, you have resistance against poison damage, and have advantage on saves against the poisoned effect.\\
+\\
+\dndtitle{16pt}{Bombs}
+At 1st level you learn a great way to use magic to make powerful bombs, you may select any 3 damaging cantrips. You are then capable of creating bombs that produce the effect of these cantrips.\\
+\indent Your spellcasting ability for this is Intelligence.\\
+Creating a bomb requires that you have access to fire, some simple herbs and takes 10 minutes per bomb to make\\
+\\
+\dndtitle{16pt}{Poison Creation}
+At 2nd level you can make your bombs poisonous, this causes all creatures damaged by one of your bombs to make a Constitution save versus your spell DC or get the poisoned condition for 5 rounds.\\
+\indent Additionally the poisoned creature takes 1d4 points of poison damage for those 5 rounds.\\
+\indent You are also capable of applying this poison to other weapons, when preparing for other weapons it takes 10 minutes to make one dose. A single dose is enough for 1 weapon, or 10 ammo.\\
+\\
+\dndtitle{16pt}{Alchemical Discovery}
+At 3rd level you discover a single more potent potion you are capable of making. Select a single spell of 5th level or lower following the same restrictions as your normal known spells.\\
+\indent This potion requires something more than the normal potions, it takes 30 minutes to make and requires your blood, because of that you can only have one of these brewed at the same tim.\\
+\\
+\dndtitle{16pt}{Mutagen}
+At 4th level you learn that alchemy is capable of even more than you thought, even making people more powerful without magic. You learn to create what is called a mutagen. This mutagen takes 30 minutes to make, and you can only have one active at the same time, because of a special component, your blood.\\
+\indent When the Mutagen is consumed the creature gets advantage on all checks and saves with one physical ability, but gets a disadvantage on all checks and saves with one mental ability.\\
+\\
+\dndtitle{16pt}{Alchemical Theorem}
+At 5th level you discover something magnificent. You learn to augment your potions with even greater powers than normal. You learn no new spells but instead you know infuse your potions with all your spells as if they were cast from a 5th level slot. This does however also increase the time requires to make them to 15 minutes, and the gold cost to 10gp.\\
+This ability can be used a number of times equal to your Intelligencen modifier + 1 before you need to complete a long rest to regain all uses.
+\end{multicols}
+\end{document}

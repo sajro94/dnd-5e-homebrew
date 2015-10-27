@@ -1,0 +1,162 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{textpos}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{pdfpages}
+\usepackage{fontspec}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{xcolor,pgf}
+\usepackage{wallpaper}
+\captionsetup[table]{labelformat=empty}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{multirow}
+
+\definecolor{bordergreen}{HTML}{566311}
+\definecolor{title}{RGB}{94,18,0}
+\definecolor{sepcol}{RGB}{186,159,11}
+
+\usepackage[top=0.6in, left=0.6in, right=0.6in, bottom=1in]{geometry}%Change the top to 0.6 if you have no banner, or increase/decrease if your banner is of different height
+\ULCornerWallPaper{1}{pageBackground.jpg}%This is the background used, this shouldn't be changed.
+\newfontfamily\bookmania{Bookmania}
+\setmainfont{Bookmania}[Scale=0.9]
+
+\newcommand{\dndtitle}[2]{\noindent{\fontsize{#1}{#1}\textcolor{title}{\textsc{#2}}}\newline}
+
+\newcommand{\HRule}[2]{\par
+  \vspace*{\dimexpr-\parskip-\baselineskip+#2}
+  \begingroup
+  	\color{sepcol}
+  	\noindent\rule{\linewidth}{#1}\par
+  \endgroup  
+  \vspace*{\dimexpr-\parskip-.5\baselineskip+#2}}
+  
+\newcommand{\opac}[1]{\pgfsetfillopacity{#1}}
+\begin{document}
+
+\newgeometry{top=3.3in}
+\ThisULCornerWallPaper{1}{pageTopBannerDesert.jpg}%This line is used to insert a nice top banner if you have one, the banner should have a full page background that matches the normal background. If you have no Banner remove this line.
+\begin{multicols}{2}
+\dndtitle{26pt}{Dragonkin}
+Flavor text about dragonkin here.\\
+\\
+\dndtitle{16pt}{Dragons}
+Some more Flavor Text\\
+\\
+\dndtitle{16pt}{Lost Lineage}
+Even more Flavor Text\\
+\\
+\dndtitle{18pt}{Prerequisites}
+In order to become and advance as a Dragonkin you must meet the following following prerequisites(in addition to the multiclassing prerequisites for your existing class):\\
+\\
+\begin{itemize}
+\item \textbf{Strength 13.} Dragonkin are strong creatures, and following this path requires strength.
+\item \textbf{Charisma 13.} Dragonkin are known to have powerful personalities and it is requires as to not succumb to the draconic desires.
+\item \textbf{Dragonborn Race.} The lineage of the dragons is only really accesible to dragonborns.
+\item \textbf{Character level 5th.} A dragonborn needs time to learn about himself before he can decide to take the path to become a true dragon kin.
+\end{itemize}
+\end{multicols}
+\newpage
+\restoregeometry
+\ThisCenterWallPaper{1}{pageBackgroundTablePrestige.jpg}
+\begin{textblock}{16}(1,0.2)
+\textsc{\textbf{The Desert Walker}}
+\end{textblock}
+\begin{picture}(30,120)(-31,-50)
+\label{my-label}
+\begin{tabular}{cp{130mm}}
+                        &                          						\\
+\multirow{-2}{*}{Level} & \multirow{-2}{*}{Features}					\\
+\rowcolor[HTML]{B8EFAD} 
+1st                     & Draconic Lineage								\\
+2nd                     & Wings, Draconic Appraisal						\\
+\rowcolor[HTML]{B8EFAD}	
+3rd                     & Improved Breath Weapon						\\
+4th                     & Longevity, Draconic Scales					\\
+\rowcolor[HTML]{B8EFAD} 
+5th                     & Dragon Apotheosis								\\
+\end{tabular}
+\end{picture}
+\begin{multicols}{2}
+\dndtitle{18pt}{Class Features}
+As a desert walker you gain the following class features.\\
+\\
+\dndtitle{14pt}{Hit Point}
+\textbf{Hit Dice:} 1d10 per desert walker level\\
+\textbf{Hit Points at 1st level:} 8 + your Constitution modifier\\
+\textbf{Hit Points at higher level:} 1d8(or 5) + your Constitution modifier per desert walker level after 1st\\
+\\
+\dndtitle{14pt}{Proficiencies}
+\textbf{Skills:} Survival, Acrobatics\\
+\\
+\dndtitle{16pt}{Spell Slots}
+When consulting the Multiclass Spellcaster table (Players Handbook page 165) you add half your level in this class rounded down to your other levels to determine how many spell slots you have per spell level.\\
+\indent If you have no other class capable of spellcasting you still gain the appropriate amount of spell slots according to half your level round up in this class.\\
+\\
+\dndtitle{16pt}{Draconic Lineage}
+From 1st level of this class you get a greater connection to your draconic ancestry. Depending on what draconic ancestry your dragonborn has he gains one cantrip from the following list and some special boon\\
+\pgfsetfillopacity{0.2}
+\rowcolors{1}{}{black!35}
+\begin{tabu} to \linewidth{llm{4cm}}
+\opac{1}Dragon	\opac{0.2}&\opac{1}	Cantrip					\opac{0.2}&\opac{1} Boon\opac{0.2}\\
+\opac{1}Black	\opac{0.2}&\opac{1}	\textit{acid splash}	\opac{0.2}&\opac{1}	You can hold your breath twice as long\opac{0.2}\\[2pt]
+\opac{1}Blue	\opac{0.2}&\opac{1}	\textit{shocking grasp}	\opac{0.2}&\opac{1}	Advantage on Survival and Nature checks in the desert\opac{0.2}\\[2pt]
+\opac{1}Green	\opac{0.2}&\opac{1}	\textit{poison spray}	\opac{0.2}&\opac{1}	Advantage on Deception checks to tell lies.\opac{0.2}\\[2pt]
+\opac{1}Red		\opac{0.2}&\opac{1}	\textit{fire bolt}		\opac{0.2}&\opac{1}	Know Your Enemy (as the Battle Master Fighter ability)*\opac{0.2}\\[2pt]
+\opac{1}White	\opac{0.2}&\opac{1}	\textit{chill touch}	\opac{0.2}&\opac{1}	Advantage on Intimidation checks to frighten.\opac{0.2}\\[2pt]
+\opac{1}Brass	\opac{0.2}&\opac{1}	\textit{produce flame}	\opac{0.2}&\opac{1}	Advantage on Insight checks to detect falsehoods.\opac{0.2}\\[2pt]
+\opac{1}Bronze	\opac{0.2}&\opac{1}	\textit{blade ward}		\opac{0.2}&\opac{1}	Advantage on Athletics checks to swim.\opac{0.2}\\[2pt]
+\opac{1}Copper	\opac{0.2}&\opac{1}	\textit{thaumaturgy}	\opac{0.2}&\opac{1}	Advantage on checks related to hospitality.\opac{0.2}\\[2pt]
+\opac{1}Gold	\opac{0.2}&\opac{1}	\textit{sacred flame}	\opac{0.2}&\opac{1}	Advantage on checks to use a disguise kit and on Deception checks to disguise yourself.\opac{0.2}\\[2pt]
+\opac{1}Silver	\opac{0.2}&\opac{1}	\textit{spare the dying}\opac{0.2}&\opac{1}	Advantage on Persuasion checks to dissuade evil actions.\opac{0.2}\\
+\end{tabu}\\[2pt]	
+\opac{1}
+{\scriptsize\textit{* Limited to reveal the comparison of only one of the following: Strength score, Dexterity score, Constitution score, Armor Class, or hit points.}}\\
+\\
+You use Charisma as your spellcasting ability for these cantrips.\\
+\\
+\dndtitle{16pt}{Wings}
+From 2nd level you become capable of creating wings to fly with, as a bonus action you extrude draconic wings from your back. This grants you a fly speed of 60 ft. And lasts for 10 minutes. When these wings are made you can't be wearing armor unless it is specially made to accommodate for the wings. Clothing covering the back is torn unless it accommodates your wings.\\
+\indent After using this ability you must finish a short rest before using it again.\\
+\indent Once you reach 10th character level, you are no longer limited to having the wings for 10 minutes only. And you no longer need to complete a short rest before using it again.\\
+\\
+\dndtitle{16pt}{Draconic Appraise}
+At 2nd level, your draconic ancestry gives you great understanding of the value of gems, precious metals, coins and jewellery. You can use a full round to determine the value of a single gem, bar of precious metal, a 1000 coint or one piece of jewellery.\\
+\\
+\dndtitle{16pt}{Improved Breath Weapon}
+At 3rd level the power of your breath weapon improves. Instead of the normal damage it deals damage according to the table below.\\
+\rowcolors{1}{}{black!35}
+\begin{tabu} to \linewidth{XX}
+\opac{1}Character Level	\opac{0.2}&\opac{1}	Breath Weapon Damage\opac{0.2}\\
+\opac{1}1st - 4th		\opac{0.2}&\opac{1}	2d8					\opac{0.2}\\
+\opac{1}5th - 8th		\opac{0.2}&\opac{1}	4d8					\opac{0.2}\\
+\opac{1}9th - 12th		\opac{0.2}&\opac{1}	6d8					\opac{0.2}\\
+\opac{1}13th - 16th		\opac{0.2}&\opac{1}	8d8					\opac{0.2}\\
+\opac{1}17th - 20th		\opac{0.2}&\opac{1}	10d8				\opac{0.2}\\
+\end{tabu}\opac{1}
+\indent Additionally if you have your breath weapon expended at the time of rolling initiative you regain it's use.\\
+\\
+\dndtitle{16pt}{Longevity}
+At 4th level the draconic blood makes you live longer. You start aging much much slower. You now only age at a 10th rate compared to normal dragonborn.\\
+\\
+\dndtitle{16pt}{Draconic Scales}
+From 4th level your draconic scales become tough as a wyrmlings scales.\\
+\indent When unarmored you have an armor class of 12 + your proficiency bonus + your Dexterity modifier(maximum of 2)\\
+\\
+\dndtitle{16pt}{Dragon Apotheosis}
+At 5th leve, your connection to the dragon you hail from become much much stronger. You are now capable of taking on the form of a true dragon. You can transform into a dragon of the same color as your ancestry and lineage. The type of dragon can be seen on the following table.\\
+\rowcolors{1}{}{black!35}
+\begin{tabu} to \linewidth{XX}
+\opac{1}Character Level	\opac{0.2}&\opac{1}	Dragon Size	\opac{0.2}\\
+\opac{1}10th or lower	\opac{0.2}&\opac{1}	Wyrmling	\opac{0.2}\\
+\opac{1}11th to 16th	\opac{0.2}&\opac{1}	Young Adult	\opac{0.2}\\
+\opac{1}17th or higher	\opac{0.2}&\opac{1}	Adult		\opac{0.2}\\
+\end{tabu}\opac{1}
+\end{multicols}
+\end{document}

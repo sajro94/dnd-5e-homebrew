@@ -1,0 +1,268 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{textpos}
+\usepackage{pdfpages}
+\usepackage{fontspec}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{wallpaper}
+\captionsetup[table]{labelformat=empty}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\definecolor{title}{RGB}{94,18,0}
+\definecolor{sepcol}{RGB}{186,159,11}
+
+\usepackage[top=0.6in, left=0.6in, right=0.6in, bottom=1in]{geometry}%Change the top to 0.6 if you have no banner, or increase/decrease if your banner is of different height
+\ULCornerWallPaper{1}{pageBackground.jpg}%This is the background used, this shouldn't be changed.
+\newfontfamily\bookmania{Bookmania}
+\setmainfont{Bookmania}[Scale=0.9]
+
+\newcommand{\dndtitle}[2]{\noindent{\fontsize{#1}{#1}\textcolor{title}{\textsc{#2}}}\newline}
+
+\newcommand{\HRule}[2]{\par
+  \vspace*{\dimexpr-\parskip-\baselineskip+#2}
+  \begingroup
+  	\color{sepcol}
+  	\noindent\rule{\linewidth}{#1}\par
+  \endgroup  
+  \vspace*{\dimexpr-\parskip-.5\baselineskip+#2}}
+  
+\begin{document}
+\newgeometry{top=4.5in}
+\ThisULCornerWallPaper{1}{pageTopBannerHexblade.jpg}%This line is used to insert a nice top banner if you have one, the banner should have a full page background that matches the normal background. If you have no Banner remove this line.
+\begin{multicols}{2}
+\dndtitle{26pt}{Soulmelder}
+A women standing atop of a hill, with glowing blue eyes and armor and weapons just apearing out of no where, all of it seems to be made of some energy but still very real.\\
+\indent At the edge of the forest stands a man, in simple clothing looking mostly like a druid, but his face resembles that of a menacing Basilisk with his hands shaped like the Sphinx's great paws. At times he looks almost like the legendary Terrasque\\
+\indent A man in heavy armor, with a normal sword standing in front of a horde of goblins. As he swings his sword it radiates with energy and a huge sweeping blow cuts the head clean of most of the goblins.\\
+\indent Soulmelders are unpredictable, you never know what they have planned, but they are different and some have sworn things akin to paladins, and others just act on some ideal.\\
+\\
+\dndtitle{16pt}{Inborn Energy}
+All creatures have access to the energy called incarnum, but not all are taught how to shape it. This is how the soulmelders prevail, some of them are taught it much the same as a wizard is taught spells, while some are taught in secluded orders like paladins, and then some discover their power alone and just realize they can shape incarnum.\\
+\\
+\dndtitle{16pt}{Rarely Indifferent}
+Most soulborn cares about most that happens around them. Some adhere to some ideal or set code, or they just want to react to the world around them for no other reason than to react.\\
+\\
+\dndtitle{16pt}{Creating a Soulmelder}
+How did your character discover his powers? Was he taught how to tap into the powers of the incarnum or did he simply stumble upon them in a dire situation? How did he react to this new found power? With digust, fear or another emotion? What kind of ideal does he live by? Or maybe he has nor ideals?\\
+\\
+\dndtitle{14pt}{Quickbuild}
+First make Constitution your highest ability score, then Strength or Dexterity depending on the type of weapon you are going to use if any.\\
+If you want to rely on soulmelds for weaponry then make Dexterity you second highest score.\\
+Second, choose the outlander or sage background\\
+\\
+\dndtitle{18pt}{Class Features}
+As a soulmelder you gain the following class features.\\
+\\
+\dndtitle{14pt}{Hit Point}
+\textbf{Hit Dice:} 1d8 per <class name> level\\
+\textbf{Hit Points at 1st level:} 8 + your Constitution modifier\\
+\textbf{Hit Points at higher level:} 1d8(or 5) + your Constitution modifier per <class name> level after 1st\\
+\\
+\dndtitle{14pt}{Proficiencies}
+\textbf{Armor:} Light armor, medium armor, shields\\
+\textbf{Weapons:} Simple weapons\\
+\textbf{Tools:} None\\
+\textbf{Saving Throws:} Charisma, Constitution\\
+\textbf{Skills:} Choose two from Athletics, Arcana, Investigation, Perception, Animal Handling, Survival\\
+\\
+\end{multicols}
+\newpage
+\restoregeometry
+\ThisCenterWallPaper{1}{pageBackgroundTable.jpg}
+\begin{textblock}{16}(0.9,0.1)
+\textsc{The Soulmelder}
+\end{textblock}
+\begin{picture}(30,350)(-30,-195)
+\label{my-label}
+\begin{tabular}{ccp{52mm}ccc}
+                        &                                     											&                             & \multicolumn{3}{c}{-Meldshaping-}		\\
+\multirow{-2}{*}{Level} & \multirow{-2}{*}{\begin{tabular}[x]{@{}c@{}}Proficiency\\Bonus\end{tabular}} & \multirow{-2}{*}{Features}   & Soulmelds	& Essentia	& Chakra Binds  \\
+\rowcolor[HTML]{B8EFAD} 
+1st                     & +2   								  & Meldshaping											&2& 1	& - 	 \\
+2nd                     & +2                                  & Chakra Binds(Least), Archetype						&2& 2   & 1 	 \\
+\rowcolor[HTML]{B8EFAD}
+3rd                     & +2                                  & Incarnum Boon										&3& 2   & 1      \\
+4th                     & +2                                  & Ability Score Improvement							&3& 3   & 1      \\
+\rowcolor[HTML]{B8EFAD} 
+5th                     & +3                                  & Archetype Feature									&4& 3   & 2      \\
+6th                     & +3                                  &	Incarnum Power										&4& 4   & 2      \\
+\rowcolor[HTML]{B8EFAD} 
+7th                     & +3                                  & Rebinding											&5& 4   & 2      \\
+8th                     & +3                                  & Ability Score Improvement							&5& 5   & 3      \\
+\rowcolor[HTML]{B8EFAD} 
+9th                     & +4                                  & Chakra Binds(Lesser)								&6& 5   & 3      \\
+10th                    & +4                                  & Archetype Feature									&6& 6   & 3      \\
+\rowcolor[HTML]{B8EFAD} 
+11th                    & +4                                  & Improved Rebinding									&7& 6   & 4      \\
+12th                    & +4                                  & Ability Score Improvement							&7& 7   & 4      \\
+\rowcolor[HTML]{B8EFAD} 
+13th                    & +5                                  & Improved Incarnum Boon								&8& 7   & 4      \\
+14th                    & +5                                  & Chakra Binds(Greater)								&8& 8   & 5	     \\
+\rowcolor[HTML]{B8EFAD} 
+15th                    & +5                                  & Archetype Feature									&9& 8   & 5      \\
+16th                    & +5                                  & Ability Score Improvement							&9& 9   & 5      \\
+\rowcolor[HTML]{B8EFAD} 
+17th                    & +6                                  &	Improved Incarnum Power								&10& 9  & 6      \\
+18th                    & +6                                  &	Archetype Feature									&10& 10 & 6      \\
+\rowcolor[HTML]{B8EFAD} 
+19th                    & +6                                  & Ability Score Improvement							&11& 10 & 6      \\
+20th                    & +6                                  & Souler												&11& 11 & 6      
+\end{tabular}
+\end{picture}
+\begin{multicols}{2}
+\dndtitle{14pt}{Equipment}
+You start with the following equipment in addition to the equipment granted by your background.	
+\begin{itemize}
+\item (a)A shield or (b)any simple weapon
+\item (a)A scale mail or (b)a studded leather
+\item (a)Any simple one handed weapon or (b)Any simple light weapon
+\item (a)A dungeoneer's pack or (b)a explorers pack%This is only an example
+\end{itemize}
+If your gm allows you to purchase your equipment you start with 3d4x10 gold\\
+\\
+\dndtitle{16pt}{Meldshaping}
+Starting at 1st level you are capable of meldshaping, a old art of shaping a power called incarnum into material corporeal things to aid you.\\
+\indent At 1st level you can have 2 soulmelds shaped at the same time, this number increases as shown in the Soulmeld column of the Soulmelder Table\\
+\indent You know all soulmeld from the list at the end of the class description.\\
+\indent You need to have had a full nights rest, and then spent 1 hour to bind your soulmelds.\\
+\indent You can invest essentia from your pool into your soulmelds to improve the benefit they grant you, the amount invested is then unable to be used for other things and cannot be greater than your proficiency bonus\\
+\\
+\dndtitle{16pt}{Chakra Binds}
+At 2nd level you become capable of binding your soulmelds to your chakra. A soulmeld can only be bound to the chakra they are currently shaped at, and can only be bound if you are capable of binding to that chakra. At first you are only capable of binding to your crown, feet and hands chakras.\\
+\indent At 9th level you become able to bind to your arms, brow and shoulder chakras, and at 14th to your waist and throat chakra.\\
+Only one soulmeld can be bound to each chakra.\\
+\\
+\dndtitle{16pt}{Archetype}
+At 2nd level you choose between becoming a Incarnate, Totemist or Soulborn\\
+\indent Each of these archetypes are detailed at the end of the class description\\
+\\
+\dndtitle{16pt}{Incarnum Boon}
+At 3rd level you are capable of using your inner Incarnum to give you small bonuses in combat. By spending one point of essentia you can choose between one of the following benefits:\\
+\indent As a reaction gain advantage on saving throw\\
+\indent As a reaction impose disadvantage on attack roll against you\\
+\\
+\dndtitle{16pt}{Ability Score Improvement}
+At 4th level you can improve one ability score by +2 or two ability scores by +1.\\
+\indent You gain this bonus again at 8th, 12th, 16th and 19th level.\\
+\\
+\dndtitle{16pt}{Incarnum Power}
+At 6th level you can use your essentia to boost your own combat abilities, spend 1 point of essentia and choose from the following effects:\\
+\indent As a bonus action gain advantage on attack roll.\\
+\indent As a bonus action make an extra attack.\\
+\\
+\dndtitle{16pt}{Rebinding}
+at 7th level you become able to rebind your soulmelds. As a action you are capable of unshape a soulmeld and instantly bind another soulmeld.\\
+\indent This ability can be used a number of times equal to you Constitution modifier, before needing to complete a long rest to regain the uses.\\
+\indent At 11th level you regain half your Constitution modifier in uses, by completing a short rest.\\
+\\
+\dndtitle{16pt}{Improved Incarnum Boon}
+At 13th level you can expend 2 points of essentia to gain the normal benefits but without expending your reaction.\\
+\\
+\dndtitle{16pt}{Improved Incarnum Power}
+At 17th level you can expend 2 points of essentia or more to gain the normal benefits of Incarnum Power, but in addition you deal extra damage equal to your Constitution modifier times the number of essentia expended above 1\\
+\indent You can never expend more essentia than half your proficiency bonus + 1\\
+\\
+\dndtitle{16pt}{Souler}
+At 20th level you seem to be able to collect incarnum power from anywhere. Whenever you roll initiative you regain a number of essentia equal to your Constitution modifier, you are still not capable of exceding your maximum as shown in the Essentia column.\\
+\indent Additionally you gain a free use of your Rebinding when rolling initiative.\\
+
+\dndtitle{18pt}{Archetypes}
+The soulmelder have three archetypes, the Initiate, the Soulborn and the Totemist\\
+\\
+\dndtitle{16pt}{Initiate}
+The initiate is the idealist of the soulmelders, they often have an extreme alignment to reflect this.\\
+\\
+\dndtitle{14pt}{Increased Soul}
+At 2nd when you adopt this archetype you start to increase the size of your essentia pool, at every even level you gain an additional point of essentia.\\
+\\
+\dndtitle{14pt}{Soulmeld Capacity}
+At 5th level the amount of essentia you can invest into soulmelds improves by 1, the effect for soulmelds is described in their description.\\
+\\
+\dndtitle{14pt}{Share Incarnum}
+At 10th level you become able to extend both your Incarnum Power, and your Incarnum Boon to affect an ally instead of yourself.\\
+\\
+\dndtitle{14pt}{Heart Chakra}
+At 15th level you gain access to one of the strongest chakras, the Heart Chakra.\\
+\\
+\dndtitle{14pt}{Soul Chakra}
+At 18th level you gain access to an even more potent chakra, the Soul Chakra.\\
+\\
+\dndtitle{16pt}{Soulborn}
+The soulborn is a part of a order much the same as a paladin but uses incarnum instead of divine magic.\\
+\\
+\dndtitle{14pt}{Martial Soul}
+When gaining this archetype at 2nd level you gain proficiency in all martial weapons as well as proficiency with heavy armor.\\
+\\
+\dndtitle{14pt}{Essentia Smite}
+At 5th level you become able to use your essentia to perform a smite attack, after hitting a target you can choose to spend 2 or more essentia to deal 2d8 radiant damage in addition to your weapons normal damage.\\
+\indent for every additional 2 points of essentia expended you deal an extra 1d8 radiant damage.\\
+\\
+\dndtitle{14pt}{Aura of Resolution}
+At 10th level you gain an aura that causes all allies within 15 feet to be immune to compulsion effects.\\
+\\
+\dndtitle{14pt}{Improved Essentia Smite}
+At 15th level you deal an extra 1d8 damage with your weapon attacks, of the same damage type as the weapon used.\\
+\\
+\dndtitle{14pt}{Essentia Destruction}
+At 18th level you can expend your entire pool of essentia to make a devistating blow against an enemy. After hitting your target you can decide to expend all of your non-invested essentia to deal bonus radiant to the target. This damage is equal to 2d8 per essentia expended in this manor.\\
+\indent This cannot be done without expending all the essentia you are capable of. Additionally for this move their is no restriction on the maximum amount of essentia expended\\
+\\
+\dndtitle{16pt}{Totemist}
+The totemist is to soulmelders what the druid is to casters. They specialize in utilizing the soulpower of the monsters of legends and try to emulate them as well as possible.\\
+\\
+\dndtitle{14pt}{Totem Chakra}
+At 2nd level when adopting this archetype you gain access to a special chakra only totemists know how to use, the Totem chakra, this chakra is not bound to the body in any way, and you cannot shape a soulmeld to it, but soulmelds can be bound to it from any other body slot.\\
+\indent Still only one soulmeld can be bound to the Chakra.\\
+\\
+\dndtitle{14pt}{Totem Capacity}
+At 5th the amount of Essentia you can invest into your totem chakra improves by +1 additionally your essentia pool increases by 1 at this level and every odd level beyond level 5.\\
+\\
+\dndtitle{14pt}{Double Totem}
+At 10th level you see greater potential in your totem chakra and becomes capable of binding two soulmelds to your totem chakra.\\
+\\
+\dndtitle{14pt}{Improved Totem Capacity}
+At 15th level you become capable of empowering your totem chakra even more than usual, you can now invest a total of 2 additional points of essentia in your soulmelds bound to your totem chakra.\\
+\indent Additionally when you make deal damage with an attack granted by a soulmeld, you deal 1d8 bonus damage of the same type as the attack.\\
+\\
+\dndtitle{14pt}{Totem Embodiment}
+At 18th level, you become capable of unlocking the true power of your totem chakra, you can unlock its full potential as a free action, and it stays unlocked for 1 minute. This unlocking doubles the essentia capacity of any soulmeld bound to the totem chakra, and when investing essentia in a soulmeld bound to the totem chakra it counts as to.\\
+\\
+\dndtitle{18pt}{Soulmelds}
+The following part of this class is the different soulmelds in 3 parts: Common, Incarnate/Soulborn and Totemist\\
+\indent The common list is very short and very broad simple effects.\\
+\\
+\dndtitle{16pt}{Common Soulmelds}
+The following soulmelds are the most common soulmelds known to all soulmelders, they are very simple and there exist only 8 of them.\\
+\\
+\dndtitle{14pt}{Incarnum Crown}
+\textbf{Descriptors:} Common\\
+\textbf{Classes:} All Soulmelders\\
+\textbf{Chakra:} Crown\\
+\textbf{Saving Throw:} None\\\
+textit{You channel the blue swirling energy of incarnum into a simple band with jagged top resembling a crow, though the form doesn't seem stable as it is ever shifting.}\\
+While this soulmeld is shaped you can add your proficiency bonus to concentration checks, and for every point of essentia invested you gain a +1 bonus to concentration checks.\\
+\\
+\dndtitle{14pt}{Incarnum Boots}
+\textbf{Descriptors:} Common\\
+\textbf{Classes:} All Soulmelders\\
+\textbf{Chakra:} Feet\\
+\textbf{Saving Throw:} None\\\
+textit{You channel the blue swirling energy of incarnum into a a pair of boots that fit perfectly around your feet or current boots, they seem to hold you a little of the ground and make you almost glide across the ground.}\\
+While these boots are shaped you have advantage on balance checks, and for every point of essentia invested you gain a +5 bonus to your land speed.\\
+\\
+\dndtitle{14pt}{Incarnum Gloves}
+\textbf{Descriptors:} Common\\
+\textbf{Classes:} All Soulmelders\\
+\textbf{Chakra:} Hands\\
+\textbf{Saving Throw:} None\\\
+textit{You channel the blue swirling energy of incarnum into a simple pair of gloves making your hands look a little bigger and difficult yo wrestle loose.}\\
+While this soulmeld is shaped you can add your proficiency bonus to grapple checks.\\
+\\
+\end{multicols}
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[22pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{pdfpages}
+\usepackage{fontspec}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{wallpaper}
+\definecolor{title}{RGB}{94,18,0}
+\usepackage[top=4.1in, left=0.6in, right=0.6in, bottom=1in]{geometry}%Change the top to 0.6 if you have no banner, or increase/decrease if your banner is of different height
+\ULCornerWallPaper{1}{pageBackground.jpg}%This is the background used, this shouldn't be changed.
+\newfontfamily\bookmania{Bookmania}
+\setmainfont{Bookmania}[Scale=0.9]
+\newcommand{\dndtitle}[2]{\noindent{\fontsize{#1}{#1}\textcolor{title}{\textsc{#2}}}\newline}
+\begin{document}
+\ThisULCornerWallPaper{1}{pageTopBanner.jpg}%This line is used to insert a nice top banner if you have one, the banner should have a full page background that matches the normal background. If you have no Banner remove this line.
+\dndtitle{26pt}{<Type> Name}
+This is used for the Archetype Name, Class Name, Background Name, Race Name or similar\\
+\\
+\dndtitle{18pt}{<Type> Feature}
+This is used as the title for different types of features.\\
+\\
+\dndtitle{16pt}{Feature Option}
+If a feature have options or subsections, this is what you would use there\\
+\\
+\dndtitle{14pt}{Other titles}
+And this is for even smaller tittles such as a subsubsection sort of thing.\\
+\\
+\begin{tabular}{cp{6cm}}
+{\bf Class Level} & {\bf Spells}                         \\
+\rowcolor[HTML]{B8EFAD} 
+3rd                 & Class Spell, Other Class's spell\\
+5th                 & Class Spell, Other Class's spell\\
+\rowcolor[HTML]{B8EFAD} 
+9th                 & Class Spell, Other Class's spell\\
+13th                & Class Spell, Other Class's spell\\
+\rowcolor[HTML]{B8EFAD} 
+17th                & Class Spell, Other Class's spell\\
+\end{tabular}\\
+This is an example of a spell table for additional spells, this can also be used for other types of tables. This is sized to be two columns and fit the width of 1 column
+\end{document}
